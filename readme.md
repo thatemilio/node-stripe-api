@@ -15,27 +15,9 @@ var stripe = require('stripe-api')(<your_stripe_api_key);
 stripe.<api_group>.<api_group_command>([arguments,] callback);
 ```
 
-###### example
+### examples
 
-```javascript
-stripe.charges.create(
-    {
-        amount: 100,
-        currency: 'usd',
-        card:
-        {
-            number:     4242424242424242,
-            exp_month:  12,
-            exp_year:   15
-        },
-        description: 'Quick stripe-api example.'
-    },
-
-    function(error, response) {
-        console.log(response);
-    }
-);
-```
+[http://emiliote.github.io/node-stripe-api/](http://emiliote.github.io/node-stripe-api/)
 
 
 ### api
