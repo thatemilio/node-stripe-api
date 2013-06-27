@@ -1,0 +1,30 @@
+{
+  "name": "stripe-api",
+  "version": "0.0.1",
+  "description": "Stripe.com API wrapper.",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emilioTe/node-stripe-api"
+  },
+  "keywords": [
+    "stripe",
+    "payments",
+    "credit card",
+    "banking"
+  ],
+  "author": "Emilio Testa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emilioTe/node-stripe-api/issues"
+  },
+  "dependencies": {
+    "request": "~2.21.0"
+  },
+  "devDependencies": {
+    "should": "~1.2.2"
+  }
+}
