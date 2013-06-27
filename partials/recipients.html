@@ -1,0 +1,80 @@
+<pre>
+//
+//--------------------------
+// .create(data, cb)
+
+stripe.recipients.create(
+    {
+        name: 'John Doe',
+        type: 'individual'
+    },
+
+    function(error, response) {
+
+        console.log(response);
+
+    }
+);
+
+
+
+//
+//--------------------------
+// .retrieve(recipient_id, cb)
+
+stripe.recipients.retrieve(&lt;recipient_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+
+//
+//--------------------------
+// .update(recipient_id, data, cb)
+
+stripe.recipients.update(&lt;recipient_id&gt;, { description: 'A user' }, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+
+//
+//--------------------------
+// .del(recipient_id, cb)
+
+stripe.recipients.del(&lt;recipient_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+
+//
+//--------------------------
+// .list([data,] cb)
+
+stripe.recipients.list(function(error, response) {
+
+    console.log(response);
+
+});
+
+
+// OR
+
+
+stripe.recipients.list({ offset: 5 }, function(error, response) {
+
+    console.log(response);
+
+});
+</pre>
+

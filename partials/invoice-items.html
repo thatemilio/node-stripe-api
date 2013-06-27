@@ -1,0 +1,81 @@
+<pre>
+//
+//--------------------------
+// .create(data, cb)
+
+stripe.invoiceItems.create(
+    {
+        customer: &lt;customer_id&gt;,
+        amount: 100,
+        currency: 'usd'
+    },
+
+    function(error, response) {
+
+        console.log(response);
+
+    }
+);
+
+
+
+//
+//--------------------------
+// .retrieve(invoiceItem_id, cb)
+
+stripe.invoiceItems.retrieve(&lt;invoiceItem_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+
+//
+//--------------------------
+// .update(invoiceItem_id, data, cb)
+
+stripe.invoiceItems.update(&lt;invoiceItem_id&gt;, { amount: -50 }, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+
+//
+//--------------------------
+// .del(invoiceItem_id, cb)
+
+stripe.invoiceItems.del(&lt;invoiceItem_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+
+//
+//--------------------------
+// .list([data,] cb)
+
+stripe.invoiceItems.list(function(error, response) {
+
+    console.log(response);
+
+});
+
+
+// OR
+
+
+stripe.invoiceItems.list({ count: 7 }, function(error, response) {
+
+    console.log(response);
+
+});
+</pre>
+

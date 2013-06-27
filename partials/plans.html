@@ -1,0 +1,83 @@
+<pre>
+//
+//--------------------------
+// .create(data, cb)
+
+stripe.plans.create(
+    {
+        amount: 200,
+        interval: 'month',
+        name: 'Super Saver Plan',
+        currency: 'usd',
+        id: 'supsersaveplan200'
+    },
+
+    function(error, response) {
+
+        console.log(response);
+
+    }
+);
+
+
+
+//
+//--------------------------
+// .retrieve(plan_id, cb)
+
+stripe.plans.retrieve(&lt;plan_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+
+//
+//--------------------------
+// .update(plan_id, data, cb)
+
+stripe.plans.update(&lt;plan_id&gt;, { name: 'Even More Superer' }, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+
+//
+//--------------------------
+// .del(plan_id, cb)
+
+stripe.plans.del(&lt;plan_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+
+//
+//--------------------------
+// .list([data,] cb)
+
+stripe.plans.list(function(error, response) {
+
+    console.log(response);
+
+});
+
+
+// OR
+
+
+stripe.plans.list({ offset: 5 }, function(error, response) {
+
+    console.log(response);
+
+});
+</pre>
+

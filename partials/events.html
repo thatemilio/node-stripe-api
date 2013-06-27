@@ -1,0 +1,34 @@
+<pre>
+//
+//--------------------------
+// .retrieve(event_id, cb)
+
+stripe.events.retrieve(&lt;event_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+//
+//--------------------------
+// .list([data,] cb)
+
+stripe.events.list(function(error, response) {
+
+    console.log(response);
+
+});
+
+
+// OR
+
+
+stripe.events.list({ offset: 1 }, function(error, response) {
+
+    console.log(response);
+
+});
+</pre>
+

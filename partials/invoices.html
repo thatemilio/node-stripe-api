@@ -1,0 +1,104 @@
+<pre>
+//
+//--------------------------
+// .retrieve(invoice_id, cb)
+
+stripe.invoices.retrieve(&lt;invoice_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+//
+//--------------------------
+// .retrieveLineItems(invoice_id, [data,] cb)
+
+stripe.invoices.retrieveLineItems(&lt;invoice_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+// OR
+
+
+stripe.invoices.retrieveLineItems(&lt;invoice_id&gt;, { count: 1 }, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+//
+//--------------------------
+// .create(customer_id, cb)
+
+stripe.invoices.create(&lt;customer_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+//
+//--------------------------
+// .pay(invoice_id, cb)
+
+stripe.invoices.pay(&lt;invoice_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+//
+//--------------------------
+// .update(invoice_id, data, cb)
+
+stripe.invoices.update(&lt;invoice_id&gt;, { closed: true }, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+//
+//--------------------------
+// .list([data,] cb)
+
+stripe.invoices.list(function(error, response) {
+
+    console.log(response);
+
+});
+
+
+// OR
+
+
+stripe.invoices.list({ count: 2 }, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+//
+//--------------------------
+// .retrieveUpcoming(customer_id, cb)
+
+stripe.invoices.retrieveUpcoming(&lt;customer_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+</pre>
+

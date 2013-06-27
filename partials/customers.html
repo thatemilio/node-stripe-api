@@ -1,0 +1,76 @@
+<pre>
+//
+//--------------------------
+// .create(data, cb)
+
+stripe.customers.create(
+    {
+        description: 'New test customer'
+    },
+
+    function(error, response) {
+
+        console.log(response);
+
+    }
+);
+
+
+
+//
+//--------------------------
+// .retrieve(customer_id, cb)
+
+stripe.customers.retrieve(&lt;customer_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+//
+//--------------------------
+// .update(customer_id, data, cb)
+
+stripe.customers.update(&lt;customer_id&gt;, { description: 'Changed desc.' }, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+//
+//--------------------------
+// .del(customer_id, cb)
+
+stripe.customers.del(&lt;customer_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+//
+//--------------------------
+// .list([data,] cb)
+
+stripe.customers.list(function(error, response) {
+
+    console.log(response);
+
+});
+
+
+// OR
+
+
+stripe.customers.list({ count: 1 }, function(error, response) {
+
+    console.log(response);
+
+});
+</pre>
+

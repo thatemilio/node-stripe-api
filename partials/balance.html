@@ -1,0 +1,34 @@
+<pre>
+//
+//--------------------------
+// .retrieve(cb)
+
+stripe.balance.retrieve(function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+//
+//--------------------------
+// .list([data,] cb)
+
+stripe.balance.list(function(error, response) {
+
+    console.log(response);
+
+});
+
+
+// OR
+
+
+stripe.balance.list({ offset: 5 }, function(error, response) {
+
+    console.log(response);
+
+});
+</pre>
+

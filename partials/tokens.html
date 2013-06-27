@@ -1,0 +1,56 @@
+<pre>
+//
+//--------------------------
+// .create(data, cb)
+
+stripe.tokens.create(
+    {
+        card:
+        {
+            number:     4242424242424242,
+            exp_month:  12,
+            exp_year:   2015
+        }
+    },
+
+    function(error, response) {
+
+        console.log(response);
+
+    }
+);
+
+
+// OR
+
+
+stripe.tokens.create(
+    {
+        bank_account:
+        {
+            country:        'US',
+            routing_number: 110000000,
+            account_number: 000123456789
+        }
+    },
+
+    function(error, response) {
+
+        console.log(response);
+
+    }
+);
+
+
+
+//
+//--------------------------
+// .retrieve(token_id, cb)
+
+stripe.tokens.retrieve(&lt;token_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+</pre>
+

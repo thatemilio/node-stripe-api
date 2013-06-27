@@ -1,0 +1,40 @@
+<pre>
+//
+//--------------------------
+// .update(customer_id, data, cb)
+
+stripe.subscriptions.update(
+    &lt;customer_id&gt;,
+    {
+        plan: 'basic'
+    },
+    function(error, response) {
+
+        console.log(response);
+
+    }
+);
+
+
+
+//
+//--------------------------
+// .cancel(customer_id, [data,] cb)
+
+stripe.subscriptions.cancel(&lt;customer_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+// OR
+
+
+stripe.subscriptions.cancel(&lt;customer_id&gt;, { at_period_end: true }, function(error, response) {
+
+    console.log(response);
+
+});
+</pre>
+

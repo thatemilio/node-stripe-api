@@ -1,0 +1,99 @@
+<pre>
+//
+//--------------------------
+// .create(data, cb)
+
+stripe.charges.create(
+    {
+        card:
+        {
+            number:     4242424242424242,
+            exp_month:  12,
+            exp_year:   2015
+        }
+    },
+
+    function(error, response) {
+        console.log(response);
+    }
+);
+
+
+
+//
+//--------------------------
+// .retrieve(charge_id, cb)
+
+stripe.charges.retrieve(&lt;charge_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+//
+//--------------------------
+// .refund(charge_id, [data,] cb)
+
+stripe.charges.refund(&lt;charge_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+// OR
+
+
+stripe.charges.refund(&lt;charge_id&gt;, { amount: 100 }, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+//
+//--------------------------
+// .capture(charge_id, [data,] cb)
+
+stripe.charges.capture(&lt;charge_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+// OR
+
+
+stripe.charges.capture(&lt;charge_id&gt;, { application_fee: 50 }, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+//
+//--------------------------
+// .list([data,] cb)
+
+stripe.charges.list(function(error, response) {
+
+    console.log(response);
+
+});
+
+
+// OR
+
+
+stripe.charges.list({ count: 5 }, function(error, response) {
+
+    console.log(response);
+
+});
+</pre>
+

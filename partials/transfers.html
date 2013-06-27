@@ -1,0 +1,68 @@
+<pre>
+//
+//--------------------------
+// .create(data, cb)
+
+stripe.transfers.create(
+    {
+        amount:     400,
+        currency:   'usd',
+        recipient:  &lt;recipient_id&gt;
+    },
+
+    function(error, response) {
+
+        console.log(response);
+
+    }
+);
+
+
+
+//
+//--------------------------
+// .retrieve(transfer_id, cb)
+
+stripe.transfers.retrieve(&lt;transfer_id&gt;, function(error, response); {
+
+    console.log(response);
+
+});
+
+
+
+
+//
+//--------------------------
+// .cancel(transfer_id, cb)
+
+stripe.transfers.cancel(&lt;transfer_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+
+//
+//--------------------------
+// .list([data,] cb)
+
+stripe.transfers.list(function(error, response) {
+
+    console.log(response);
+
+});
+
+
+// OR
+
+
+stripe.transfers.list({ count: 2 }, function(error, response) {
+
+    console.log(response);
+
+});
+</pre>
+

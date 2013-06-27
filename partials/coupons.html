@@ -1,0 +1,66 @@
+<pre>
+//
+//--------------------------
+// .create(data, cb)
+
+stripe.coupons.create(
+    {
+        percent_off: 25,
+        duration: 'repeating',
+        duration_in_months: 3
+    },
+
+    function(error, response) {
+
+        console.log(response);
+
+    }
+);
+
+
+
+//
+//--------------------------
+// .retrieve(coupon_id, cb)
+
+stripe.coupons.retrieve(&lt;coupon_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+//
+//--------------------------
+// .del(coupon_id, cb)
+
+stripe.coupons.del(&lt;coupon_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+//
+//--------------------------
+// .list([data,] cb)
+
+stripe.coupons.list(function(error, response) {
+
+    console.log(response);
+
+});
+
+
+// OR
+
+
+stripe.coupons.list({ offset: 3 }, function(error, response) {
+
+    console.log(response);
+
+});
+</pre>
+

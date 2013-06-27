@@ -1,0 +1,20 @@
+<pre>
+//
+//--------------------------
+// .update(charge_id, data, cb)
+
+stripe.disputes.update(
+    &lt;charge_id&gt;,
+    { 
+        evidence: 'The evidence is clear, my dear Watson.'
+    },
+
+    function(error, response) {
+
+        console.log(response);
+
+    }
+);
+</pre>
+
+
