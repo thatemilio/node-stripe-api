@@ -1,7 +1,7 @@
 {
   "name": "stripe-api",
   "version": "0.0.1",
-  "description": "Stripe.com API wrapper.",
+  "description": "The Stripe.com API.",
   "main": "index.js",
   "scripts": {
     "test": ""
