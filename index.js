@@ -124,6 +124,50 @@ module.exports = function(api_key) {
 
         //
         // -------------------------------------------
+        // Cards API
+        //
+        cards: {
+
+            create: function(customer_id, data, cb) {
+                _request('post', '/customers/' + customer_id + '/cards', data, cb);
+            },
+
+
+            retrieve: function(customer_id, card_id, cb) {
+                _request('get', '/customers/' + customer_id + '/cards/' + card_id, cb);
+            },
+
+
+            update: function(customer_id, card_id, data, cb) {
+                _request('post', '/customers/' + customer_id + '/cards/' + card_id, data, cb);
+            },
+
+
+            del: function(customer_id, card_id, cb) {
+                _request('delete', '/customers/' + customer_id + '/cards/' + card_id, cb);
+            },
+
+
+            list: function(customer_id, data, cb) {
+                if ( arguments.length === 3 ) {
+
+                    var query = querystring.stringify(data);
+                    _request('get', '/customers/' + customer_id + '/cards?' + query, cb);
+
+                } else {
+                    
+                    var cb = data;
+                    _request('get', '/customers/' + customer_id + '/cards', cb);
+
+                }
+            }
+
+        },
+
+
+
+        //
+        // -------------------------------------------
         // Charges API
         //
         charges: {

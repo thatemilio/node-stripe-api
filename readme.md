@@ -43,6 +43,15 @@ The `data` argument is a javascript object with key/value pairs that match what'
 * `list([data,] cb)`
 
 
+##### [cards](https://stripe.com/docs/api#cards)
+
+* `create(customer_id, data, cb)`
+* `retrieve(customer_id, card_id, cb)`
+* `update(customer_id, card_id, data, cb)`
+* `del(customer_id, card_id, cb)`
+* `list(customer_id, [data,] cb)`
+
+
 ##### [subscriptions](https://stripe.com/docs/api#subscriptions)
 
 * `update(customer_id, data, cb)`

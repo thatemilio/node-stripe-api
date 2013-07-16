@@ -1,3 +1,8 @@
+#### 0.1.0 / July 16th, 2013
+
+* Added support for the [cards](https://stripe.com/docs/api#cards) API.
+
+
 #### 0.0.1 / June 26th, 2013
 
 * Initial release
