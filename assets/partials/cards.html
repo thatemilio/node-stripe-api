@@ -1,0 +1,82 @@
+<pre>
+//
+//--------------------------
+// .create(customer_id, data, cb)
+
+stripe.cards.create(
+    &lt;customer_id&gt;,
+    {
+        card: &lt;token_id&gt;
+        
+    },
+
+    function(error, response) {
+        console.log(response);
+    }
+);
+
+
+
+//
+//--------------------------
+// .retrieve(customer_id, card_id, cb)
+
+stripe.cards.retrieve(&lt;customer_id&gt;, &lt;card_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+//
+//--------------------------
+// .update(customer_id, card_id, data, cb)
+
+stripe.cards.update(
+    &lt;customer_id&gt;,
+    &lt;card_id&gt;,
+    {
+        name: 'Henry Winkler'
+    },
+    
+    function(error, response) {
+        console.log(response);
+    }
+);
+
+
+
+//
+//--------------------------
+// .del(customer_id, card_id, cb)
+
+stripe.cards.del(&lt;customer_id&gt;, &lt;card_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+
+//
+//--------------------------
+// .list(customer_id, [data,] cb)
+
+stripe.cards.list(&lt;customer_id&gt;, function(error, response) {
+
+    console.log(response);
+
+});
+
+
+// OR
+
+
+stripe.cards.list(&lt;customer_id&gt;, { count: 5 }, function(error, response) {
+
+    console.log(response);
+
+});
+</pre>
+
