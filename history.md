@@ -1,3 +1,8 @@
+#### 0.1.1 / August 28th, 2013
+
+* Restructured unit tests
+
+
 #### 0.1.0 / July 16th, 2013
 
 * Added support for the [cards](https://stripe.com/docs/api#cards) API.

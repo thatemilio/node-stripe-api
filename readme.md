@@ -148,5 +148,11 @@ The `data` argument is a javascript object with key/value pairs that match what'
 
 ### test
 
-All tests use [should.js](https://github.com/visionmedia/should.js/) and were run with [Mocha](http://visionmedia.github.io/mocha/).
+Install the development modules.
+`npm install`
+
+Open `./tests/run.js` and paste in your [Test Secret Key](https://manage.stripe.com/account/apikeys).
+
+Run the tests.
+`mocha`
 
