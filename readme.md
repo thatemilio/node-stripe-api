@@ -149,10 +149,14 @@ The `data` argument is a javascript object with key/value pairs that match what'
 ### test
 
 Install the development modules.
-`npm install`
+```
+npm install
+```
 
 Open `./tests/run.js` and paste in your [Test Secret Key](https://manage.stripe.com/account/apikeys).
 
 Run the tests.
-`mocha`
+```
+mocha
+```
 
