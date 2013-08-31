@@ -22,7 +22,7 @@ stripe.<api_group>.<api_group_command>([arguments,] callback);
 
 ### api
 
-The `data` argument is a javascript object with key/value pairs that match what's expected by the [Stripe API](https://stripe.com/docs/api).
+The `data` argument is a javascript object (`{}`) with key/value pairs that match what's expected by the [Stripe API](https://stripe.com/docs/api).
 
 
 ##### [charges](https://stripe.com/docs/api#charges)
