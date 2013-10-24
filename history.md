@@ -1,3 +1,7 @@
+#### 0.1.2 / October 24th, 2013
+* End of life announcement
+
+
 #### 0.1.1 / August 28th, 2013
 
 * Restructured unit tests

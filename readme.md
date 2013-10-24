@@ -1,4 +1,14 @@
-## node-stripe-api
+## deprecated
+
+This module will no longer be supported since `Stripe` has an 
+[official Node.js module](https://stripe.com/blog/official-nodejs-support).
+
+`npm install stripe`
+
+It's been fun! :beer:
+
+
+### node-stripe-api
 
 [node.js](http://nodejs.org) wrapper for the [Stripe API](https://stripe.com/docs/api).
 
